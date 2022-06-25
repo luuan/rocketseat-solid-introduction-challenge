@@ -16,7 +16,7 @@ class ListAllUsersUseCase {
     }
 
     if (!user.admin) {
-      throw new Error("Apenas Adminisitradores podem listar os usuários");
+      throw new Error("Apenas Administradores podem listar os usuários");
     }
 
     return this.usersRepository.list();
